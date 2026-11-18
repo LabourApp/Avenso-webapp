@@ -1,8 +1,8 @@
 # Avenso Website
 
-The public-facing React website for Avenso. It introduces the service, explains the two mobile app experiences, builds trust through a founder vision and clear product information, and directs visitors to the appropriate next step.
+The public-facing React website for Avenso. It introduces the service, explains the two mobile app experiences, builds trust through a founder vision and clear product information, and directs visitors to the appropriate next step. Vercel route rewrites in [`vercel.json`](vercel.json) support direct visits and refreshes on nested React pages.
 
-The website is an awareness and discovery layer. The employer and worker apps remain the primary places to post work, find opportunities, respond to requests, and manage work. Read [`docs/website-brief.md`](docs/website-brief.md) for product and content scope, [`docs/design-system.md`](docs/design-system.md) for visual rules, [`docs/development.md`](docs/development.md) for setup and maintenance, and [`docs/policies/README.md`](docs/policies/README.md) for the legal policy draft sources.
+The website is an awareness and discovery layer. The employer and worker apps remain the primary places to post work, find opportunities, respond to requests, and manage work. Read [`docs/website-brief.md`](docs/website-brief.md) for product and content scope, [`docs/design-system.md`](docs/design-system.md) for visual rules, [`docs/development.md`](docs/development.md) for setup and maintenance, and [`docs/policies/README.md`](docs/policies/README.md) for the legal policy sources.
 
 ## Run locally
 
@@ -34,7 +34,7 @@ docs/              Product, design, development, and policy source documents
 - The supplied Avenso brand icon is used in the site header and browser/app icon slots.
 - Add the published Google Play and Apple App Store URLs for both apps, then expose the four store buttons. They remain hidden while the apps are unpublished.
 - The public contact email is `napshotpriyanshu@gmail.com`; the Contact page does not offer a mobile contact option.
-- Review and approve the Terms & Conditions, Privacy Policy, and Commercial Policy drafts in `docs/policies/` before treating or describing them as final policies. Their current website pages are prominently marked internal draft and not for publication/acceptance.
+- The Version 1.0 Terms & Conditions, Privacy Policy, Commercial Policy, and Help, Grievance & Account Deletion pages are linked from the site footer.
 - Review product statements against the current app and backend behavior. See the content guardrails in [`docs/website-brief.md`](docs/website-brief.md).
 
 ## Documentation maintenance
