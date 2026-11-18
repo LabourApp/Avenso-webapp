@@ -53,7 +53,7 @@ function SiteFooter() {
 }
 
 function ContactPage() {
-  return <><header className="header"><div className="nav-wrap"><Brand/><a className="nav-cta" href="/">Back to home <ArrowUpRight size={16}/></a></div></header><main className="contact-page"><div className="section-kicker">Avenso is here to listen <span>✳</span></div><h1>Let’s talk about<br/><em>making work connect.</em></h1><p>Questions about Avenso, the apps, or working with us? Send us a note and we’ll be glad to hear from you.</p><div className="contact-details"><a href="mailto:napshotpriyanshu@gmail.com"><Mail/><span><small>Email</small>napshotpriyanshu@gmail.com</span><ArrowUpRight/></a><div><MapPin/><span><small>Based in</small>India</span></div></div></main><SiteFooter/></>;
+  return <><header className="header"><div className="nav-wrap"><Brand/><a className="nav-cta" href="/">Back to home <ArrowUpRight size={16}/></a></div></header><main className="contact-page"><div className="section-kicker">Avenso is here to listen <span>✳</span></div><h1>Let’s talk about<br/><em>making work connect.</em></h1><p>Questions about Avenso, the apps, or working with us? Send us a note and we’ll be glad to hear from you.</p><div className="contact-details"><a href="mailto:support@avenso.in"><Mail/><span><small>Email</small>support@avenso.in</span><ArrowUpRight/></a><div><MapPin/><span><small>Based in</small>India</span></div></div></main><SiteFooter/></>;
 }
 
 const policyDocuments = {
