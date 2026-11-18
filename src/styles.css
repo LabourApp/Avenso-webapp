@@ -55,10 +55,6 @@ body{font-size:16px}
 .policy-page .button{margin-top:22px}
 .policy-page-full{width:min(1040px,calc(100% - 48px));padding-top:78px}
 .policy-page-full>h1{font-size:clamp(42px,5.2vw,60px);margin-bottom:28px}
-.draft-alert{padding:20px 23px;background:#fff2e4;border:1px solid #edc493;border-left:5px solid #b73535;border-radius:10px;display:grid;gap:8px;color:#603f2c}
-.draft-alert strong{font-size:12px;letter-spacing:.1em;color:#9c312d}
-.draft-alert span{font-size:15px;font-weight:700}
-.draft-alert small{font-size:13px;line-height:1.65}
 .policy-meta{display:grid;grid-template-columns:.6fr 1fr 1.5fr;gap:12px;margin:15px 0}
 .policy-meta>div{background:#fff;border:1px solid #e1e9eb;border-radius:9px;padding:15px}
 .policy-meta small{display:block;text-transform:uppercase;letter-spacing:.09em;font-size:10px;color:#70838b;margin-bottom:7px}
@@ -81,7 +77,7 @@ body{font-size:16px}
 .policy-clause p{margin-bottom:0}
 .policy-list-item{display:flex;gap:10px;padding-left:7px}
 .policy-list-item>span{color:#174a67}
-.draft-placeholder{background:#fff0d9;color:#84510f;border-bottom:1px dashed #d18b31;padding:1px 3px;border-radius:3px;overflow-wrap:anywhere}
+.policy-note-mark{background:#fff0d9;color:#84510f;border-bottom:1px dashed #d18b31;padding:1px 3px;border-radius:3px;overflow-wrap:anywhere}
 .brand-logo{width:36px;height:36px;object-fit:contain;border-radius:9px;mix-blend-mode:multiply}
 .brand-light .brand-logo{background:#fff;border-radius:50%;mix-blend-mode:normal}
 .founder-monogram{overflow:hidden;isolation:isolate;background:linear-gradient(145deg,#e3eded,#f1f5f4 80%)}

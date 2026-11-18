@@ -1,12 +1,14 @@
 # Subscription, Credits, Payments, Cancellation & Refund Policy
 
-*DOC-03  |  Version 1.2  |  Effective date: 18 November 2026*
+*DOC-03  |  VERSION 1.0*
 
 **Avenso**
 
+**Effective from:** 18 November 2026
+
 **Operator:** Priyanshu Narwaria  |  Gwalior, Madhya Pradesh, India
 
-**Support:** **napshotpriyanshu@gmail.com**
+**Support:** **support@avenso.in**
 
 ### C01  Introduction and Applicability
 
@@ -22,7 +24,7 @@ Avenso will disclose the price, included credits, duration and any applicable li
 
 ### C03  Subscription Purchase and Renewal
 
-Initially, Employers purchase subscriptions by contacting Avenso administration at **napshotpriyanshu@gmail.com**. Avenso provides plan details and authorized payment instructions. Credits are added after payment is verified and the purchase is approved.
+Initially, Employers purchase subscriptions by contacting Avenso administration at **support@avenso.in**. Avenso provides plan details and authorized payment instructions. Credits are added after payment is verified and the purchase is approved.
 
 Renewal is manual, not automatic. When a subscription ends, its plan-specific benefits may end, but unused allocated credits remain available while the account is active and eligible. Refunds of purchased subscriptions follow C09.
 
@@ -60,7 +62,7 @@ Avenso may verify and correct pending, failed or duplicate transactions. Taxes a
 
 Cancelling a job or work arrangement does not automatically refund a valid platform charge. Failed job-publication deductions are restored as described in C04. Failed contact unlocks are handled under C05.
 
-For payment problems or refund requests, email **napshotpriyanshu@gmail.com** with the purchase date, amount, transaction reference and reason. Avenso will review the request and communicate its decision. Approved monetary refunds will be processed to an appropriately verified payment account, subject to applicable payment rules. Refunds are considered for duplicate or erroneous payments, undelivered paid features and other circumstances required by law. A validly delivered platform service is not automatically refundable solely because a job or work arrangement does not proceed. Nothing in this Policy removes mandatory legal refund rights.
+For payment problems or refund requests, email **support@avenso.in** with the purchase date, amount, transaction reference and reason. Avenso will review the request and communicate its decision. Approved monetary refunds will be processed to an appropriately verified payment account, subject to applicable payment rules. Refunds are considered for duplicate or erroneous payments, undelivered paid features and other circumstances required by law. A validly delivered platform service is not automatically refundable solely because a job or work arrangement does not proceed. Nothing in this Policy removes mandatory legal refund rights.
 
 ### C10  Special Circumstances
 
@@ -76,7 +78,7 @@ Purchased and subscription-allocated credits retain the no-time-expiry rule desc
 
 ### C12  Support and Disputes
 
-For billing, credit or refund questions, contact **napshotpriyanshu@gmail.com**. Include the relevant transaction or job reference and a short description; never share login OTPs or unnecessary bank details.
+For billing, credit or refund questions, contact **support@avenso.in**. Include the relevant transaction or job reference and a short description; never share login OTPs or unnecessary bank details.
 
 Avenso may review payment records, credit ledger entries and publication or unlock events and correct verified errors. Complaints may be submitted to the support email above. Avenso will acknowledge and investigate complaints and communicate the outcome through an appropriate channel. Users may request further review by replying to the support correspondence. Material changes to this Policy will be communicated through the app or another official channel, with an updated effective date.
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { ArrowDown, ArrowRight, ArrowUpRight, Check, ChevronDown, Menu, Play, ShieldCheck, Sparkles, Users, Wrench, X, Mail, MapPin } from 'lucide-react';
-import termsDraft from '../docs/policies/terms-and-conditions.md?raw';
-import privacyDraft from '../docs/policies/privacy-policy.md?raw';
-import commercialDraft from '../docs/policies/commercial-policy.md?raw';
-import helpDraft from '../docs/policies/help-grievance-account-deletion.md?raw';
+import termsPolicy from '../docs/policies/terms-and-conditions.md?raw';
+import privacyPolicy from '../docs/policies/privacy-policy.md?raw';
+import commercialPolicy from '../docs/policies/commercial-policy.md?raw';
+import helpPolicy from '../docs/policies/help-grievance-account-deletion.md?raw';
 import './styles.css';
 
 function Brand({ light = false }) {
@@ -57,10 +57,10 @@ function ContactPage() {
 }
 
 const policyDocuments = {
-  terms: { title: 'Terms & Conditions', code: 'DOC-01', version: 'Draft Version 1.0 · 18 November 2026', status: 'Internal working draft — not approved for publication or acceptance.', applies: 'Avenso Employer App, Avenso Worker App, and related website functions where expressly stated.', reviewNotes: 'Draft date: 18 November 2026. Operator: Priyanshu Narwaria, individual proprietor, Gwalior, Madhya Pradesh, India. Confirm the correspondence address and effective date before publication. Text enclosed in {$[...]} is a required input or confirmation, not operative contractual wording. Resolve every placeholder before publication. Related documents: DOC-02 Privacy Policy; DOC-03 Subscription, Credits, Payments, Cancellation & Refund Policy; DOC-04 Help, Grievance & Account Deletion. These must be published and linked before the agreement goes live. The general terms apply to all users. The applicable role-specific terms supplement them. Where provisions conflict, a specific provision controls only to the extent permitted by applicable law.', source: termsDraft, start: /^#{0,3}\s*PART A\s+\|/m },
-  privacy: { title: 'Privacy Policy', code: 'DOC-02', version: 'Draft Version 1.0 · 18 November 2026', status: 'Internal review — not for publication.', applies: 'Employer App, Worker App, and applicable public website/support channels.', reviewNotes: 'Prepared from the approved Avenso business requirements and supplied app/backend reports. This draft does not represent an independent audit of the production systems. Text enclosed in {$[...]} identifies information to confirm, implementation details to audit, or proposed content to replace before release. These markers are intentionally retained for review. Document owner: Priyanshu Narwaria. Correspondence address and designated privacy/grievance contact details remain review items.', source: privacyDraft, start: /^#{0,3}\s*P01\s{2}/m },
-  commercial: { title: 'Commercial Policy', code: 'DOC-03', version: 'Draft Version 1.0 · 18 November 2026', status: 'For internal review only — not for public release.', applies: 'Primarily Employer App accounts. Worker wage arrangements remain directly between Employer and Worker.', reviewNotes: 'Drafting basis: approved Avenso business decisions and reported implementation; unresolved details are explicitly marked {$[... ]}. Not legal advice or a publication-ready policy. Document owner: Priyanshu Narwaria. Effective date: 18 November 2026 (draft; pending legal review). Business location: Gwalior, Madhya Pradesh, India.', source: commercialDraft, start: /^#{0,3}\s*C01\s{2}/m },
-  help: { title: 'Help, Grievance & Account Deletion', code: 'DOC-04', version: 'Draft Version 1.0 · 18 November 2026', status: 'Draft — support details and workflows require confirmation before publication.', applies: 'Avenso app users seeking support, submitting a grievance, or requesting account-deletion assistance.', reviewNotes: 'This draft is based on the product and policy information currently supplied. It is not a service-level commitment. Confirm the grievance officer, postal address, response timelines, and account-deletion workflow before publishing as a final policy.', source: helpDraft, start: /^#{0,3}\s*H01\s{2}/m },
+  terms: { title: 'Terms & Conditions', version: 'Version 1.0', effectiveDate: '18 November 2026', applies: 'Avenso Employer App, Avenso Worker App, and related website functions where expressly stated.', source: termsPolicy, start: /^#{0,3}\s*PART A\s+\|/m },
+  privacy: { title: 'Privacy Policy', version: 'Version 1.0', effectiveDate: '18 November 2026', applies: 'Employer App, Worker App, and applicable public website/support channels.', source: privacyPolicy, start: /^#{0,3}\s*P01\s{2}/m },
+  commercial: { title: 'Commercial Policy', version: 'Version 1.0', effectiveDate: '18 November 2026', applies: 'Primarily Employer App accounts. Worker wage arrangements remain directly between Employer and Worker.', source: commercialPolicy, start: /^#{0,3}\s*C01\s{2}/m },
+  help: { title: 'Help, Grievance & Account Deletion', version: 'Version 1.0', effectiveDate: '18 November 2026', applies: 'Avenso app users seeking support, submitting a grievance, or requesting account-deletion assistance.', source: helpPolicy, start: /^#{0,3}\s*H01\s{2}/m },
 };
 
 function safeId(value) {
@@ -93,20 +93,20 @@ function policyBlocks(document) {
   return blocks.map((block, index) => block.type === 'section' ? { ...block, id: safeId(block.content) } : { ...block, key: index });
 }
 
-function DraftText({ children }) {
-  return children.split(/(\{\$\[.*?\]\}|\*\*.*?\*\*)/g).map((part, index) => part.startsWith('{$[') ? <mark className="draft-placeholder" key={index}>{part}</mark> : part.startsWith('**') ? <strong key={index}>{part.slice(2, -2)}</strong> : part);
+function PolicyText({ children }) {
+  return children.split(/(\{\$\[.*?\]\}|\*\*.*?\*\*)/g).map((part, index) => part.startsWith('{$[') ? <mark className="policy-note-mark" key={index}>{part}</mark> : part.startsWith('**') ? <strong key={index}>{part.slice(2, -2)}</strong> : part);
 }
 
 function PolicyPage({ document }) {
   const blocks = policyBlocks(document);
   const sections = blocks.filter(block => block.type === 'section');
-  return <><header className="header"><div className="nav-wrap"><Brand/><a className="nav-cta" href="/">Back to home <ArrowUpRight size={16}/></a></div></header><main className="policy-page policy-page-full"><div className="section-kicker">Avenso policies · {document.code}</div><h1>{document.title}</h1><div className="draft-alert"><strong>WORKING DRAFT · NOT A FINAL POLICY</strong><span>{document.status}</span><small>Do not treat this page as an agreement or rely on it as a finalized policy. Bracketed notes are unresolved review inputs.</small></div><div className="policy-meta"><div><small>Document</small><b>{document.code}</b></div><div><small>Version</small><b>{document.version}</b></div><div><small>Applies to</small><b>{document.applies}</b></div></div><p className="policy-review-note"><DraftText>{document.reviewNotes}</DraftText></p><details className="policy-toc"><summary>Contents <span>{sections.length} sections</span></summary><nav>{sections.map(section => <a key={section.id} href={`#${section.id}`}>{section.content}</a>)}</nav></details><article className="policy-document">{blocks.map((block, index) => {
+  return <><header className="header"><div className="nav-wrap"><Brand/><a className="nav-cta" href="/">Back to home <ArrowUpRight size={16}/></a></div></header><main className="policy-page policy-page-full"><div className="section-kicker">Avenso policies</div><h1>{document.title}</h1><div className="policy-meta"><div><small>Effective from</small><b>{document.effectiveDate}</b></div><div><small>Version</small><b>{document.version}</b></div><div><small>Applies to</small><b>{document.applies}</b></div></div><details className="policy-toc"><summary>Contents <span>{sections.length} sections</span></summary><nav>{sections.map(section => <a key={section.id} href={`#${section.id}`}>{section.content}</a>)}</nav></details><article className="policy-document">{blocks.map((block, index) => {
     if (block.type === 'part') return <h2 className="policy-part" key={index}>{block.content}</h2>;
     if (block.type === 'section') return <h3 id={block.id} key={block.id}>{block.content.replace(/\s{2,}/g, ' ')}</h3>;
-    if (block.type === 'list-item') return <p className="policy-list-item" key={index}><span>•</span><DraftText>{block.content}</DraftText></p>;
+    if (block.type === 'list-item') return <p className="policy-list-item" key={index}><span>•</span><PolicyText>{block.content}</PolicyText></p>;
     const subheading = block.content.match(/^(\d+\.\d+)\s+([^.]*)\.\s*(.*)$/);
-    if (subheading) return <div className="policy-clause" key={index}><h4>{subheading[1]} · {subheading[2]}</h4>{subheading[3] && <p><DraftText>{subheading[3]}</DraftText></p>}</div>;
-    return <p key={index}><DraftText>{block.content}</DraftText></p>;
+    if (subheading) return <div className="policy-clause" key={index}><h4>{subheading[1]} · {subheading[2]}</h4>{subheading[3] && <p><PolicyText>{subheading[3]}</PolicyText></p>}</div>;
+    return <p key={index}><PolicyText>{block.content}</PolicyText></p>;
   })}</article></main><SiteFooter/></>;
 }
 

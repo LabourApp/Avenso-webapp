@@ -1,14 +1,12 @@
 # Terms & Conditions
 
-*DOC-01  |  DRAFT VERSION 1.0  |  18 November 2026*
+*DOC-01  |  VERSION 1.0*
 
 **AVENSO**
 
-Status: Internal working draft — not approved for publication or acceptance.
-
 Applicable surfaces: Avenso Employer App and Avenso Worker App; related website functions where expressly stated.
 
-Effective date: 18 November 2026. Legal operator: Priyanshu Narwaria.
+Effective from: 18 November 2026. Legal operator: Priyanshu Narwaria.
 
 ## Contents
 
@@ -24,9 +22,9 @@ The general terms apply to all users. The applicable role-specific terms supplem
 
 ### A01  Introduction and Company Details
 
-These Terms govern access to and use of the Avenso digital marketplace (the 'Platform'), currently operated by Priyanshu Narwaria, an individual operating from Gwalior, Madhya Pradesh, India. Avenso is a brand name and is not represented in this draft as an incorporated company.
+These Terms govern access to and use of the Avenso digital marketplace (the 'Platform'), currently operated by Priyanshu Narwaria, an individual operating from Gwalior, Madhya Pradesh, India. 
 
-The Platform is intended for users in India. Its services may be available nationwide subject to actual coverage, technical availability, and applicable law. Official website: {$[website URL]}; support: **napshotpriyanshu@gmail.com**. These Terms take effect on 18 November 2026.
+The Platform is intended for users in India. Its services may be available nationwide subject to actual coverage, technical availability, and applicable law. Official website: https://avenso.in; support: **support@avenso.in**. These Terms take effect on 18 November 2026.
 
 ### A02  Definitions and Interpretation
 
@@ -144,7 +142,7 @@ Avenso may update these Terms for operational, security or legal reasons. Users 
 
 ### A22  Contact and Grievance Details
 
-Platform support and complaints: **napshotpriyanshu@gmail.com**. Correspondence location: Gwalior, Madhya Pradesh, India. Formal grievance officer details and any additional legally required contact information will be provided through the Help, Grievance & Account Deletion page.
+Platform support and complaints: **support@avenso.in**. Correspondence location: Gwalior, Madhya Pradesh, India. Formal grievance officer details and any additional legally required contact information will be provided through the Help, Grievance & Account Deletion page.
 
 The public Help, Grievance & Account Deletion page (Help, Grievance & Account Deletion) will describe complaint submission, acknowledgement, escalation, privacy requests and account deletion.
 

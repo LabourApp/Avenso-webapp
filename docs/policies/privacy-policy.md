@@ -1,6 +1,6 @@
 # Privacy Policy
 
-*DOC-02  |  Draft Version 1.2  |  Internal review — not for publication*
+*DOC-02  |  VERSION 1.0*
 
 **AVENSO**
 
@@ -24,15 +24,15 @@ P13 Third-Party Services  /  P14 Children and Age Restrictions
 
 P15 International Data Transfers  /  P16 Changes and Contact
 
-Document owner: Priyanshu Narwaria  |  Effective date: 18 November 2026
+Document owner: Priyanshu Narwaria  |  Effective from: 18 November 2026
 
 ### P01  Introduction
 
 Avenso is an India-focused digital marketplace through which individuals, contractors and firms may discover workers, publish work opportunities and connect with one another. This Privacy Policy explains how personal information is handled in the Avenso Employer App, Worker App and any Avenso-operated public website or support channel (together, the “Services”).
 
-Avenso is operated by Priyanshu Narwaria, an individual proprietor based in Gwalior, Madhya Pradesh, India. Correspondence address: . The operator is responsible for this policy and the handling of personal data through the Services. {$[BLOCKER: Full correspondence address]}
+Avenso is operated by Priyanshu Narwaria, an individual proprietor based in Gwalior, Madhya Pradesh, India. Correspondence address: . The operator is responsible for this policy and the handling of personal data through the Services. 
 
-This policy is intended for adults aged 18 or above in India. It should be read alongside Avenso’s Terms & Conditions, Subscription, Credits, Payments, Cancellation & Refund Policy, and Help, Grievance & Account Deletion page. Effective date: 18 November 2026; version: Draft 1.2.
+This policy is intended for adults aged 18 or above in India. It should be read alongside Avenso’s Terms & Conditions, Subscription, Credits, Payments, Cancellation & Refund Policy, and Help, Grievance & Account Deletion page. Effective from 18 November 2026; version: 1.0.
 
 ### P02  Personal Data Collected
 
@@ -98,7 +98,6 @@ In an active, unexpired direct connection, the connection-detail service can dis
 
 Authorised administrators may access profile information and submitted selfies to perform review, support and safety functions. We may disclose limited information to hosting, SMS, map, push-notification and other processors; to competent authorities when legally required; or to protect lawful rights and safety.
 
-{$[BLOCKER: Confirm worker-interest gate is enforced in backend and consistent with Terms/credit rules]}
 
 ### P09  Location and Visibility
 
@@ -112,11 +111,10 @@ Search radii vary by feature: direct worker search begins at 10 km, may expand b
 
 The reviewed backend uses authenticated administrator routes, admin-role checks and a production server-side phone allowlist for administrator eligibility. Verification decisions are logged with reviewer, subject, reason, status and timestamp. Push tokens are encrypted in the application database. No comprehensive audit of every administrator read was identified.
 
-OTP challenges expire after approximately five minutes and OTP rate-limit counters after approximately fifteen minutes. Temporary live-location records expire in Redis as described above. The reviewed code does not establish general deletion schedules for saved profiles, locations, sessions, jobs, connections or credit ledgers. Previous and current selfie submissions may be retained for review history. {$[BLOCKER: Approve data retention and backup schedule]}
+OTP challenges expire after approximately five minutes and OTP rate-limit counters after approximately fifteen minutes. Temporary live-location records expire in Redis as described above. The reviewed code does not establish general deletion schedules for saved profiles, locations, sessions, jobs, connections or credit ledgers. Previous and current selfie submissions may be retained for review history. 
 
 After eligible account deletion, Avenso intends to remove profile, location, media and session information and anonymise account references in retained transaction or work records, subject to legal and operational exceptions. Anonymisation must be tested so that the remaining information is not readily attributable to the former user.
 
-{$[BLOCKER: Confirm production hosting locations and security controls]}
 
 ### P11  User Rights and Consent
 
@@ -128,13 +126,12 @@ Avenso should maintain appropriate records of privacy notices, consent requests 
 
 ### P12  Account Deletion
 
-Avenso provides for account deletion through its app workflow, subject to release verification in both Employer and Worker apps. The backend blocks deletion while certain work activity remains unresolved. {$[BLOCKER: Verify account deletion in both production apps]}
+Avenso provides for account deletion through its app workflow, subject to release verification in both Employer and Worker apps. The backend blocks deletion while certain work activity remains unresolved. 
 
 Avenso may need to verify account control and assess unresolved jobs, engagements, disputes or lawful record-keeping obligations before completing deletion. The user should be informed if deletion is delayed or restricted and what action is required.
 
 On eligible deletion, the backend attempts to remove profile, location and session data and anonymise the user while retaining some job and credit-ledger history. It also attempts to delete selfie and job-photo storage objects. Unused credits expire on voluntary deletion subject to applicable law.
 
-{$[BLOCKER: Finalize deletion timelines and unresolved engagement handling]}
 
 ### P13  Third-Party Services
 
@@ -156,14 +153,13 @@ Avenso serves users in India, but the reviewed code does not establish that all 
 
 Any transfer or access from another jurisdiction must be assessed against applicable Indian law, government restrictions and contractual safeguards before deployment or publication of definitive claims.
 
-{$[BLOCKER: Confirm international data processing locations and safeguards]}
 
 ### P16  Changes and Contact
 
 Avenso may update this Privacy Policy to reflect changes in the Services, operational practices or legal requirements. The updated policy should carry a new effective date and be made accessible in both apps and on the public legal page. Material changes should be communicated through appropriate app notices or other available channels.
 
-For privacy questions, correction requests, complaints or deletion assistance, contact **napshotpriyanshu@gmail.com**. Correspondence location: Gwalior, Madhya Pradesh, India. {$[BLOCKER: Full postal address and designated privacy/grievance officer contact]}
+For privacy questions, correction requests, complaints or deletion assistance, contact **support@avenso.in**. Correspondence location: Gwalior, Madhya Pradesh, India. 
 
-The Privacy Policy, Terms & Conditions, and Help, Grievance & Account Deletion page will be available through their published legal-page links. {$[BLOCKER: Publish stable URLs for all three pages]}
+The Privacy Policy, Terms & Conditions, and Help, Grievance & Account Deletion page will be available through their published legal-page links. 
 
-Terms acceptance is intended to capture the checkbox, version, language viewed and any renewed acceptance. {$[BLOCKER: Hindi privacy notice, privacy-consent records and complaint handling deadlines]}
+Terms acceptance is intended to capture the checkbox, version, language viewed and any renewed acceptance. 
